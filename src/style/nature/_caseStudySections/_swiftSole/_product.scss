@@ -1,0 +1,96 @@
+.swiftsole-product {
+  margin-top: 72px;
+
+  &-title {
+    font-family: Cambria;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+
+    width: 159px;
+    height: 24px;
+    margin: 0px;
+    margin-bottom: 41px;
+  }
+
+  &-content {
+    text-align: center;
+    position: relative;
+    height: 190px;
+    width: 539px;
+
+    &::before {
+      position: absolute;
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: normal;
+      text-align: center;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      color: #000000;
+      text-align: center;
+      margin: auto;
+      white-space: pre-line;
+
+      font-size: 16px;
+      line-height: 22px;
+      content: 'The app allows users to order Supreme’s latest products before anyone else. Before we worked on this project, we had no idea how big the luxury second hand market was! So we have a bot that fetches the data from Supreme. We would display to our users the batch of Supreme products coming the next week. Then the user could choose the products they like, and how many they want to order.\A\A The Swiftsole app was a great great success as you \A can see from the reviews and the 42k follower on Twitter.';
+    }
+
+  }
+
+  &-image {
+    background-image: url('images/nature/background/swiftsole/swiftsole-product.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 398px;
+    height: 485px;
+    margin-top: 76px;
+  }
+
+  @media screen and (max-width: $screen-tablet-max) and (min-width: $screen-tablet-min) {
+
+    &-content {
+      height: 170px;
+
+      &::before {
+        font-size: 14px;
+        line-height: 19px;
+        content: 'The app allows users to order Supreme’s latest products before anyone else. \A Before we worked on this project, we had no idea how big the luxury second hand market was! So we have a bot that fetches the data from Supreme. \A\A We would display to our users the batch of Supreme products coming the next week. Then the user could choose the products they like, and how many they want to order.\A\A The Swiftsole app was a great great success as you \A can see from the reviews and the 42k follower on Twitter.';
+      }
+    }
+
+    &-image {
+      margin-top: 50px;
+      margin-left: -20px;
+    }
+  }
+
+  @media screen and (max-width: $screen-mobile-max) and (min-width: $screen-mobile-min),
+  screen and (max-width: $screen-tiny-max) {
+    margin-top: 53px;
+
+    &-content {
+      width: 268px;
+      height: 193px;
+
+      &::before {
+        font-size: 16px;
+        line-height: 22px;
+        content: 'The app allows users to \A order Supreme’s latest \A products before anyone else. \A\A We would display to our users the batch of Supreme products coming the next week. Then the user could choose the products they like, and how many they want to order.';
+      }
+    }
+
+    &-image {
+      margin-top: 45px;
+      width: 245px;
+      height: 299px;
+    }
+  }
+}

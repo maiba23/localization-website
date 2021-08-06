@@ -1,0 +1,50 @@
+.folder-button {
+
+  width: 203px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: grab;
+
+  &-icon {
+    content: "";
+    background-image: url('images/nature/background/caseofstudy/folder_fold.svg');
+    transition: background-image 0.2s ease;
+    width: 56px;
+    height: 85px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+
+  &:hover &-icon {
+    background-image: url('images/nature/background/caseofstudy/folder_unfold.svg');
+  }
+
+
+
+  &-label {
+    font-family: Junegull;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+
+    color: #000000;
+  }
+
+  @media screen and (max-width: $screen-mobile-max) and (min-width: $screen-mobile-min),
+  screen and (max-width: $screen-tiny-max) {
+    width: 125px;
+
+    &-label {
+      margin-top: 18px;
+
+      line-height: 18px;
+      font-size: 18px;
+    }
+  }
+}

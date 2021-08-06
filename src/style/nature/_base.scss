@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+@font-face {
+    font-family: 'Junegull';
+    src: local('Junegull'), url('../fonts/junegull/junegull-rg.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: local('Nunito'), url('../fonts/nunito/Nunito-Regular.ttf') format('truetype');
+}
+
+h1,
+h2,
+h3,
+div,
+p,
+span,
+a,
+li {
+    font-family: 'Arvo', serif, 'Montserrat', sans-serif;
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.body-content {
+    max-width: var(--max-width);
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: #0060B6;
+    text-decoration: none;
+}
+
+
+// Defining values
+$screen-mobile-min: 375px;
+$screen-tablet-min: 768px;
+$screen-desktop-min: 1440px;
+$screen-tiny-max: ($screen-mobile-min - 1);
+$screen-mobile-max: ($screen-tablet-min - 1);
+$screen-tablet-max: ($screen-desktop-min - 1);

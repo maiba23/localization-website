@@ -1,0 +1,24 @@
+@import './base';
+@import './variables';
+@import './layout';
+@import './typography';
+@import './animations';
+@import './components/index';
+@import './_caseStudySections/index';
+@import './_homeSections/index';
+@import './_contact/index';
+@import './_joinus/index';
+@import './_404/index';
+
+html {
+    overflow: hidden auto;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+
+    overflow: hidden auto;
+}

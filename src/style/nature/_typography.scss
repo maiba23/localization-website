@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap');
+
+h1, h2, h3, div, p, span, a , li{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+h2 {
+ font-size: 48px;
+ font-weight: 700;
+}
+p {
+    line-height: 31px;
+    letter-spacing: 0.3px;
+    font-size: 1.1rem;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+}
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+ 
+}
+.body-content {
+    max-width: var(--max-width);
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ul {
+    list-style-type: none;
+  }
+  a {
+    color: #0060B6;
+    text-decoration: none;
+}

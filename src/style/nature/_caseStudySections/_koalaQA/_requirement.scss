@@ -1,0 +1,87 @@
+.requirements {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-subtitle {
+    font-family: Cambria;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    margin: 0px;
+  }
+
+  &-content {
+    margin: 0;
+    margin-top: 41px;
+    width: 540px;
+    height: 83px;
+
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    white-space: pre-wrap;
+  }
+
+  &-image {
+    margin-top: 59px;
+  }
+
+
+  @media screen and (max-width: $screen-mobile-max) and (min-width: $screen-mobile-min),
+  screen and (max-width: $screen-tiny-max) {
+    margin-top: 39px;
+
+    &-content {
+      display: none;
+    }
+
+    &-image {
+      margin-top: 34px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+
+      height: 362px;
+
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+
+      color: #000000;
+
+
+      &:before {
+        width: 227px;
+        content: 'The Koala team wanted to build a visual bug tracking tool for websites. ';
+        height: 58px;
+      }
+
+      &:after {
+        width: 268px;
+        content: 'The main goal was to \A allow website owners to get \A clear feedback across all platforms.';
+        height: 58px;
+        white-space: pre;
+      }
+
+      svg {
+        width: 301px;
+        height: 182px;
+      }
+    }
+
+
+  }
+}

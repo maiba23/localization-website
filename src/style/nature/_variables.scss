@@ -1,0 +1,39 @@
+:root {
+    // --purple: #672394;
+    --purple: #9E6CFF;
+    --pink: #FF6CE0;
+    --yellow: #FFDE16;
+    --blue: #25AAE1;
+    --green: #00D384;
+    --grey: #e8e6d9;
+    --orange: #ED684A;
+    --black: #000;
+    --max-width: 1280px;
+    --nav-height: 151px;
+    --section-separator-height: 100px;
+    --cube-height: 100px;
+
+
+    --primary-textcolor: var(--black);
+    --primary-hover-color: #25AAE1;
+
+    @media screen and (min-width: $screen-desktop-min) {
+        --nav-height: 151px;
+        --dialog-taskbar-height: 30px;
+        --footer-height: 257px;
+    }
+
+    @media screen and (max-width: $screen-tablet-max) and (min-width: $screen-tablet-min) {
+        --nav-height: 135px;
+        --dialog-taskbar-height: 24px;
+        --footer-height: 168px;
+    }
+
+    @media screen and (max-width: $screen-mobile-max) and (min-width: $screen-mobile-min),
+    screen and (max-width: $screen-tiny-max) {
+        --nav-height: 98px;
+        --dialog-taskbar-height: 19px;
+        --footer-height: 137px;
+    }
+
+}

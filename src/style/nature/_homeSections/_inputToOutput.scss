@@ -1,0 +1,100 @@
+.input-to-output {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+
+  &:before {
+    content: '';
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &-image {
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  @media screen and (min-width: $screen-desktop-min) {
+    height: 808px;
+
+    &:before {
+      background-image: url('images/nature/background/blog/input_to_output_bg_desktop.svg');
+    }
+
+    &-dialog {
+      margin-top: 171px;
+      margin-left: -133px;
+
+      .rounded-dialog {
+        width: 513px;
+        height: 263px;
+      }
+    }
+
+    &-image {
+      margin-top: 146px;
+      width: 713px;
+      height: 563px;
+      background-image: url('images/nature/background/blog/input_to_output.svg');
+    }
+  }
+
+  @media screen and (max-width: $screen-tablet-max) and (min-width: $screen-tablet-min) {
+    height: 421px;
+
+    &:before {
+      background-image: url('images/nature/background/blog/input_to_output_bg_tablet.svg');
+    }
+
+    &-dialog {
+      padding-top: 18px;
+      margin-left: -80px;
+
+      .rounded-dialog {
+        width: 377px;
+        height: 191px;
+      }
+    }
+
+    &-image {
+      margin-top: 65px;
+      width: 391px;
+      height: 308px;
+      background-image: url('images/nature/background/blog/input_to_output_tablet.svg');
+    }
+  }
+
+  @media screen and (max-width: $screen-mobile-max) and (min-width: $screen-mobile-min),
+  screen and (max-width: $screen-tiny-max) {
+    &:before {
+      background-image: url('images/nature/background/blog/input_to_output_bg_mobile.svg');
+    }
+
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 606px;
+    justify-content: flex-end;
+
+    &-dialog {
+      padding-top: 24px;
+
+      .rounded-dialog {
+        width: 312px;
+        height: 248px;
+      }
+    }
+
+    &-image {
+      margin-top: 61px;
+      width: 319px;
+      height: 252px;
+      background-image: url('images/nature/background/blog/product_idea_mobile.svg');
+    }
+  }
+}

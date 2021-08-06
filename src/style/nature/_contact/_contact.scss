@@ -1,0 +1,244 @@
+.contact-us {
+  margin-top: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-title {
+    width: 308px;
+    height: 50px;
+
+    font-family: Junegull;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 50px;
+    margin: 0px;
+    text-align: center;
+  }
+
+  &-content {
+    width: 349px;
+    height: 19px;
+    font-size: 16px;
+    line-height: 22px;
+
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+
+    color: #000000;
+    margin-top: 24px;
+  }
+
+  &-info {
+    background-image: url('images/nature/background/contact/contactus.svg');
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 742px;
+    height: 712px;
+
+    margin-top: 58px;
+    margin-left: 110px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-left: 270px;
+
+    &-title {
+      width: 388px;
+      height: 25px;
+
+      font-family: Cambria;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 25px;
+      line-height: 29px;
+      margin: 0px;
+    }
+
+    &-content {
+      width: 389px;
+      height: 39px;
+
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      margin-top: 24px;
+    }
+
+    &-section1 {
+      margin-top: 82px;
+    }
+
+    &-section2 {
+      height: 20px;
+
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 27px;
+      height: 272px;
+      justify-content: space-between;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-icon {
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      &::before {
+        content: '';
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 0;
+        bottom: 0;
+        width: 50px;
+        height: 50px;
+        margin-left: -10px;
+      }
+
+      padding-left: 86px;
+
+      height: 50px;
+
+    }
+
+
+
+    &-phone {
+      &::before {
+        background-image: url('images/nature/background/contact/phone.svg');
+      }
+    }
+
+    &-email {
+      &::before {
+        background-image: url('images/nature/background/contact/email.svg');
+      }
+    }
+
+    &-location {
+      &::before {
+        background-image: url('images/nature/background/contact/location.svg');
+      }
+    }
+
+    &-social {
+      display: flex;
+      justify-content: left;
+
+      svg {
+        height: 31px;
+        width: 31px;
+
+        path {
+          stroke: var(--black);
+        }
+
+        margin-right: 15px;
+
+        &:hover {
+          path {
+            stroke: var(--primary-hover-color);
+          }
+        }
+      }
+
+      margin-bottom: 87px;
+
+    }
+
+  }
+
+  @media screen and (max-width: $screen-tablet-max) and (min-width: $screen-tablet-min) {
+    margin-top: 78px;
+
+    &-info {
+      background-image: url('images/nature/background/contact/contactus_tablet.svg');
+      width: 537px;
+      height: 644px;
+      padding-left: 260px;
+      margin-left: 0px;
+
+      &-content {
+        width: 305px;
+      }
+
+      &-section1 {
+        margin-top: 74px;
+      }
+    }
+  }
+
+  @media screen and (max-width: $screen-mobile-max) and (min-width: $screen-mobile-min),
+  screen and (max-width: $screen-tiny-max) {
+    margin-top: 78px;
+
+    &-info {
+      background-image: url('images/nature/background/contact/contactus_mobile.svg');
+      width: 302px;
+      height: 362px;
+      padding: 0;
+      margin-left: 0px;
+      align-items: center;
+
+      &-title {
+        width: auto;
+        font-size: 18px;
+        line-height: 21px;
+      }
+
+      &-content {
+        display: none;
+      }
+
+      &-section1 {
+        margin-top: 56px;
+      }
+
+      &-icon {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        &::before {
+          content: '';
+          width: 26px;
+          height: 26px;
+          margin-left: 0px;
+        }
+
+        height: 26px;
+        padding-left: 52px;
+        font-size: 16px;
+        line-height: 22px;
+
+      }
+
+      &-section2 {
+        height: 136px;
+      }
+
+      &-social {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+}

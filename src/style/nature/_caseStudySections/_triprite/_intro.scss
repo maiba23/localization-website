@@ -1,0 +1,114 @@
+.triprite-intro {
+  margin-top: 137px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-title {
+    width: 198px;
+    margin: 0px;
+    margin-bottom: 24px;
+
+    font-family: Junegull;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #000000;
+  }
+
+  &-subtitle {
+    width: 450px;
+    height: 124px;
+
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    white-space: pre-line;
+  }
+
+  &-image {
+    background-image: url('images/nature/background/triprite/triprite.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 837px;
+    height: 637px;
+    margin-top: -162px;
+  }
+
+  @media screen and (max-width: $screen-tablet-max) and (min-width: $screen-tablet-min) {
+    &-title {
+      margin-bottom: 24px;
+    }
+
+    &-subtitle {
+      width: 450px;
+
+      font-size: 14px;
+      line-height: 19px;
+    }
+
+    &-image {
+      background-image: url('images/nature/background/triprite/triprite_tablet.svg');
+      width: 670px;
+      height: 575px;
+      margin-top: -80px;
+    }
+
+  }
+
+  @media screen and (max-width: $screen-mobile-max) and (min-width: $screen-mobile-min),
+  screen and (max-width: $screen-tiny-max) {
+    margin-top: 38px;
+
+    &-title {
+      font-size: 38px;
+      line-height: 38px;
+      margin-bottom: 40px;
+      position: relative;
+      width: 230px;
+
+      &::after {
+        content: 'For Triprite we delivered a\A product we were proud of.\A\A And everyone was happy\A but as you can imagine with\A the global pandemic the project \A came to an abrupt halt.';
+        width: 230px;
+        height: 147px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 58px;
+        text-align: center;
+        white-space: pre-line;
+      }
+    }
+
+    &-subtitle {
+      width: 230px;
+      height: auto;
+      font-size: 16px;
+      line-height: 22px;
+      display: none;
+    }
+
+    &-image {
+      position: relative;
+
+      background-image: url('images/nature/background/triprite/triprite_mobile.svg');
+      width: 306px;
+      height: 260px;
+      margin-top: 140px;
+    }
+
+  }
+}

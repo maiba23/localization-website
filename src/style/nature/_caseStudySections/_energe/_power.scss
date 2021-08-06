@@ -1,0 +1,90 @@
+.energe-power {
+  margin-top: 68px;
+
+  &-title {
+    width: 569px;
+    height: 24px;
+
+    font-family: Cambria;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 43px;
+  }
+
+  &-content {
+    width: 569px;
+    height: 108px;
+    text-align: center;
+    position: relative;
+
+    &::before {
+      content: 'The data was collected from sensors on a given site. The data was stored, cached and analyzed to then be consumed on the user\'s dashboard.\A\A The dashboard has multiple functionalities such as bill generation, solar calculators, identification of system optimization, live graphs...';
+      font-size: 16px;
+      line-height: 22px;
+
+      position: absolute;
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: normal;
+      text-align: center;
+      white-space: pre-line;
+      color: #000000;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+  }
+
+  &-image {
+    background-image: url('images/nature/background/energe/energe-power.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    width: 955px;
+    height: 583px;
+    margin-top: 69px;
+  }
+
+  @media screen and (max-width: $screen-tablet-max) and (min-width: $screen-tablet-min) {
+    margin-top: 72px;
+
+
+
+    &-image {
+      width: 587px;
+      height: 357px;
+      margin-top: 43px;
+    }
+  }
+
+  @media screen and (max-width: $screen-mobile-max) and (min-width: $screen-mobile-min),
+  screen and (max-width: $screen-tiny-max) {
+    margin-top: 42px;
+
+    &-title {
+      margin-bottom: 40px;
+    }
+
+    &-content {
+      &::before {
+        content: 'The data was collected, stored, cached and analyzed to then be consumed on the user\'s dashboard.\A\A The dashboard has multiple functionalities such as bill generation, solar calculators, identification of system optimization, live graphs...';
+      }
+
+      width: 270px;
+      height: 169px;
+    }
+
+    &-image {
+      width: 296px;
+      height: 185px;
+      margin-top: 40px;
+    }
+  }
+
+}

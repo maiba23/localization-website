@@ -1,0 +1,126 @@
+ .oil {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .oil-intro {
+   margin-top: 81px;
+
+   &-title {
+     width: 538px;
+     height: 99px;
+     font-size: 50px;
+     line-height: 50px;
+     margin: 0px;
+     font-family: Junegull;
+     font-style: normal;
+     font-weight: normal;
+     text-align: center;
+     color: #000000;
+   }
+
+   &-datetime {
+     width: 392px;
+     height: 22px;
+
+     font-family: Nunito;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 22px;
+
+     text-align: center;
+
+     color: #000000;
+     margin-top: 24px;
+     margin-bottom: 24px;
+   }
+
+   &-content {
+     width: 540px;
+     height: 105px;
+     text-align: center;
+     position: relative;
+
+     &::before {
+       font-size: 16px;
+       line-height: 22px;
+       white-space: pre-line;
+       color: #000000;
+       position: absolute;
+       left: 0;
+       right: 0;
+       top: 0;
+       bottom: 0;
+
+       font-family: Nunito;
+       font-style: normal;
+       font-weight: normal;
+       text-align: center;
+
+       content: 'We can’t share much about this project for security and privacy reasons. But this is an incredibly interesting project where analog and digital meet.\A\A As all of our projects, our client came to us with just an idea, and we had to implement everything from design to IOT device integration.';
+     }
+
+
+   }
+
+   &-image {
+     background-image: url('images/nature/background/oil/oil-intro.svg');
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: center;
+
+     width: 703px;
+     height: 499px;
+     margin-top: 21px;
+   }
+
+   @media screen and (max-width: $screen-tablet-max) and (min-width: $screen-tablet-min) {
+     margin-top: 85px;
+
+     &-content {
+       &::before {
+         font-size: 14px;
+         line-height: 19px;
+       }
+     }
+
+     &-image {
+       width: 597px;
+       height: 423px;
+       margin-top: 0px;
+     }
+   }
+
+   @media screen and (max-width: $screen-mobile-max) and (min-width: $screen-mobile-min),
+   screen and (max-width: $screen-tiny-max) {
+     margin-top: 44px;
+
+     &-title {
+       font-size: 34px;
+       line-height: 34px;
+       width: 268px;
+     }
+
+     &-datetime {
+       margin-top: 39px;
+       margin-bottom: 29px;
+     }
+
+     &-content {
+       width: 268px;
+       height: 171px;
+
+       &::before {
+         content: 'This is an incredibly interesting\A project where analog and \A digital meet.\A\A As all of our projects, our client came to us with just an idea, and we had \A to implement everything from design\A to IOT device integration.';
+       }
+     }
+
+     &-image {
+       width: 301px;
+       height: 203px;
+       margin-top: -10px;
+     }
+   }
+ }

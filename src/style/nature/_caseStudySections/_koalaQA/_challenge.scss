@@ -1,0 +1,202 @@
+.challenges {
+  margin-top: 74px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-title {
+    width: 152px;
+    height: 24px;
+    margin: 0px;
+
+    font-family: Cambria;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+  }
+
+  &-content {
+    margin-top: 41px;
+    width: 645px;
+    font-size: 18px;
+    line-height: 25px;
+
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    white-space: pre;
+    color: #000000;
+  }
+
+  &-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 82px;
+  }
+
+  &-explain {
+    margin: -60px 0 62px;
+    width: 78vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &-icon {
+        margin-bottom: 33px;
+      }
+
+      &-content {
+        max-width: 340px;
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        white-space: pre-line;
+
+      }
+    }
+  }
+
+  @media screen and (max-width: $screen-tablet-max) and (min-width: $screen-tablet-min) {
+    &-content {
+      width: 540px;
+      font-size: 14px;
+      line-height: 19px;
+    }
+
+    &-image {
+      margin-top: 68px;
+
+      svg {
+        width: 588px;
+        height: 530px;
+      }
+    }
+
+    &-explain {
+      margin: 81px 0 62px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      &-item {
+        &-content {
+          width: 540px;
+          height: 213px;
+
+          font-size: 14px;
+          line-height: 19px;
+          white-space: pre-wrap;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $screen-mobile-max) and (min-width: $screen-mobile-min),
+  screen and (max-width: $screen-tiny-max) {
+    margin-top: 57px;
+
+    &-content {
+      display: none;
+    }
+
+    &-image {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 34px;
+
+      &:before {
+        content: 'The only real challenge\A there was to structure the\A organization and user access.';
+        width: 268px;
+        height: 60px;
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        white-space: pre;
+        margin-bottom: 34px;
+      }
+
+
+
+      svg {
+        width: 287px;
+        height: 261px;
+      }
+    }
+
+    &-explain {
+      margin: 60px 0 45px;
+      flex-direction: column;
+      align-items: center;
+
+      &-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+
+
+        &-icon {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 33px;
+        }
+
+        &-content {
+          display: none;
+        }
+
+        &:first-child {
+          .challenges-explain-item-icon:after {
+            content: 'At the end we successfully allowed\A the clients who want feedback\A to simply drop a snippet in\A their website. ';
+            width: 268px;
+            height: 40px;
+            margin-top: 27px;
+            white-space: pre;
+          }
+        }
+
+        &:last-child {
+          margin-top: 45px;
+
+          .challenges-explain-item-icon:after {
+            content: 'If the user logged in through the\A Koala dashboard, it would see a\A new UI and be able to drop\A comments on the site.';
+            width: 268px;
+            height: 40px;
+            margin-top: 27px;
+            white-space: pre;
+          }
+        }
+      }
+
+    }
+  }
+}

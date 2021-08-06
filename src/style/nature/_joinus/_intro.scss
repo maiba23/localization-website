@@ -1,0 +1,94 @@
+.joinus-intro {
+  margin-top: 46px;
+  margin-bottom: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1113px;
+
+  &-title {
+    &::before {
+      content: 'Work at the most dynanic and sucessful agency.';
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      margin-top: 24px;
+      order: 1;
+      text-align: center;
+    }
+
+    margin: 0px;
+
+    span {
+      font-family: Junegull;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 50px;
+      line-height: 50px;
+      text-align: left;
+      text-align: center;
+
+      strong {
+        color: #9E6CFF;
+      }
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-image {
+    background-image: url('images/nature/background/joinus/joinus.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    width: 539px;
+    height: 398px;
+    margin-top: 0px;
+  }
+
+  @media screen and (max-width: $screen-tablet-max) and (min-width: $screen-tablet-min) {
+    margin-top: 78px;
+    margin-bottom: 0px;
+    flex-direction: column;
+
+
+    &-image {
+      margin-top: 45px;
+      width: 413px;
+      height: 305px;
+    }
+
+  }
+
+  @media screen and (max-width: $screen-mobile-max) and (min-width: $screen-mobile-min),
+  screen and (max-width: $screen-tiny-max) {
+    margin-top: 57px;
+    margin-bottom: 0px;
+    flex-direction: column;
+
+    &-title {
+      span {
+        font-size: 38px;
+        line-height: 38px;
+
+      }
+
+      &::before {
+        margin-top: 19px;
+        max-width: 215px;
+      }
+    }
+
+
+    &-image {
+      margin-top: 39px;
+      width: 280px;
+      height: 207px;
+    }
+  }
+}

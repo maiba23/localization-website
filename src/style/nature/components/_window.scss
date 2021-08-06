@@ -1,0 +1,162 @@
+.rounded-dialog {
+  position: relative;
+
+  &-wrapper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: white;
+    z-index: 1;
+    border: 3px solid #000;
+    padding-top: var(--dialog-taskbar-height);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 20px;
+  }
+
+  &-taskbar {
+    content: '';
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    height: var(--dialog-taskbar-height);
+    position: absolute;
+    border-bottom: 3px solid #000;
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 7px;
+    }
+  }
+
+  &-content-wrapper {
+    .title {
+      font-family: Cambria;
+      font-style: normal;
+      font-weight: bold;
+      color: #000000;
+    }
+
+    .content {
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: normal;
+      color: #000000;
+      white-space: pre-line;
+    }
+  }
+
+  &-shadow {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: absolute;
+
+    border-radius: 20px;
+    z-index: 0;
+  }
+
+
+}
+
+@media screen and (min-width: $screen-desktop-min) {
+  .rounded-dialog {
+    &-wrapper {
+      padding-left: 43px;
+      padding-right: 43px;
+    }
+
+    &-taskbar {
+      padding-left: 32px;
+    }
+
+    &-content-wrapper {
+      .title {
+        font-size: 48px;
+        line-height: 56px;
+        margin-bottom: 25px;
+      }
+
+      .content {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+
+    &-shadow {
+      top: 15px;
+      left: 15px;
+    }
+  }
+
+}
+
+@media screen and (max-width: $screen-tablet-max) and (min-width: $screen-tablet-min) {
+  .rounded-dialog {
+
+    &-wrapper {
+      padding-left: 26px;
+      padding-right: 26px;
+    }
+
+    &-taskbar {
+      padding-left: 24px;
+    }
+
+    &-content-wrapper {
+      .title {
+        font-size: 38px;
+        line-height: 38px;
+        margin-bottom: 20px;
+      }
+
+      .content {
+        font-size: 14px;
+        line-height: 19px;
+      }
+    }
+
+    &-shadow {
+      top: 11px;
+      left: 11px;
+    }
+  }
+
+}
+
+@media screen and (max-width: $screen-mobile-max) and (min-width: $screen-mobile-min),
+screen and (max-width: $screen-tiny-max) {
+  .rounded-dialog {
+    &-wrapper {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+
+    &-taskbar {
+      padding-left: 19px;
+    }
+
+    &-content-wrapper {
+      .title {
+        font-size: 38px;
+        line-height: 45px;
+        margin-bottom: 25px;
+      }
+
+      .content {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+
+    &-shadow {
+      top: 9px;
+      left: 9px;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.business-cycle {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+
+  &-image {
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+
+  @media screen and (min-width: $screen-desktop-min) {
+    height: 720px;
+    margin-top: 80px;
+
+    &-dialog {
+      margin-top: 95px;
+      margin-right: 74.57px;
+
+      .rounded-dialog {
+        width: 583px;
+        height: 294px;
+      }
+    }
+
+    &-image {
+      margin-top: 146px;
+      width: 713px;
+      height: 563px;
+      background-image: url('images/nature/background/blog/business_cycle.svg');
+    }
+  }
+
+  @media screen and (max-width: $screen-tablet-max) and (min-width: $screen-tablet-min) {
+    height: 528px;
+
+
+    &-dialog {
+      padding-top: 128px;
+      margin-right: 17.4px;
+
+      .rounded-dialog {
+        width: 379px;
+        height: 301px;
+      }
+    }
+
+    &-image {
+      margin-top: 182px;
+      width: 282px;
+      height: 220px;
+      background-image: url('images/nature/background/blog/business_cycle_tablet.svg');
+    }
+  }
+
+  @media screen and (max-width: $screen-mobile-max) and (min-width: $screen-mobile-min),
+  screen and (max-width: $screen-tiny-max) {
+
+    flex-direction: column;
+    align-items: center;
+    height: 764px;
+    justify-content: flex-start;
+
+    &-dialog {
+      padding-top: 119px;
+
+      .rounded-dialog {
+        width: 312px;
+        height: 332px;
+      }
+    }
+
+    &-image {
+      margin-top: 46px;
+      width: 282px;
+      height: 220px;
+      background-image: url('images/nature/background/blog/business_cycle_mobile.svg');
+    }
+  }
+}

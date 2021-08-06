@@ -1,0 +1,44 @@
+
+
+.highlight-background {
+	-webkit-transition:1s;
+	-o-transition:1s;
+	transition:1s;
+	width: 0;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: -1;
+	height: 100%;
+	border-radius: 3px;
+}
+
+.highlight {
+	background-position: 100% 100%;
+	background-size: 200% 100%;
+	background-image: -webkit-gradient(linear,
+																			 left top, right top,
+																			 from(yellow),
+																			 color-stop(50%, yellow),
+																			 color-stop(50%, transparent),
+																			 to(transparent));
+	background-image: -o-linear-gradient(left,
+																			 yellow,
+																			 yellow 50%,
+																			 transparent 50%,
+																			 transparent);
+	background-image: linear-gradient(to right,
+																			 yellow,
+																			 yellow 50%,
+																			 transparent 50%,
+																			 transparent);
+																			 
+ -webkit-transition:   all 1.2s ease-in;
+																			 
+ -o-transition:   all 1.2s ease-in;
+																			 
+ transition:   all 1.2s ease-in;
+}
+.highlight.show {
+  background-position :0 0
+}

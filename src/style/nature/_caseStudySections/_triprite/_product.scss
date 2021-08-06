@@ -1,0 +1,127 @@
+.triprite-product {
+  margin-top: 29px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  &-title {
+    margin: 0px;
+    font-family: Cambria;
+    font-style: normal;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+
+    width: 540px;
+    font-size: 25px;
+    line-height: 29px;
+    margin-bottom: 41px;
+  }
+
+  &-content {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+
+    width: 540px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &-image {
+    background-image: url('images/nature/background/triprite/product.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    width: 801px;
+    height: 1520px;
+    margin-top: 0px;
+    z-index: -1;
+    position: relative;
+
+    span {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      max-width: 540px;
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: normal;
+      text-align: center;
+      color: #000000;
+
+      margin-top: 751px;
+      font-size: 16px;
+      line-height: 22px;
+
+    }
+  }
+
+  @media screen and (max-width: $screen-tablet-max) and (min-width: $screen-tablet-min) {
+
+    &-subtitle {
+      width: 540px;
+
+      font-size: 14px;
+      line-height: 19px;
+    }
+
+    &-image {
+      width: 621px;
+      height: 1179px;
+      margin-top: 13px;
+
+      span {
+        margin-top: 567px;
+        font-size: 14px;
+        line-height: 19px;
+        max-width: 394px;
+      }
+    }
+
+  }
+
+  @media screen and (max-width: $screen-mobile-max) and (min-width: $screen-mobile-min),
+  screen and (max-width: $screen-tiny-max) {
+    &-title {
+      margin-bottom: 41px;
+    }
+
+    &-content {
+      max-width: 268px;
+      display: inline;
+    }
+
+    &-image {
+      width: 335px;
+      height: 639px;
+      margin-top: 15px;
+
+
+      span {
+        display: none;
+      }
+
+      &:after {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        position: absolute;
+        margin-top: 296px;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        max-width: 224px;
+        content: "All the data is accessible \athrough an admin dashboard.";
+      }
+    }
+  }
+}

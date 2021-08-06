@@ -1,0 +1,110 @@
+.web-analysis {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+
+
+  &:before {
+    content: '';
+    opacity: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &-image {
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+
+
+  @media screen and (min-width: $screen-desktop-min) {
+    height: 755px;
+    margin-top: 80px;
+
+
+    &:before {
+      background-image: url('images/nature/background/blog/web_analysis_bg.svg');
+    }
+
+    &-dialog {
+      margin-top: 97px;
+
+      .rounded-dialog {
+        width: 593px;
+        height: 299px;
+      }
+    }
+
+    &-image {
+      margin-top: 211px;
+      margin-right: -82px;
+      width: 629px;
+      height: 459px;
+      background-image: url('images/nature/background/blog/web_analysis.svg');
+    }
+  }
+
+
+  @media screen and (max-width: $screen-tablet-max) and (min-width: $screen-tablet-min) {
+    height: 538px;
+
+    &:before {
+      background-image: url('images/nature/background/blog/web_analysis_bg_tablet.svg');
+    }
+
+    &-dialog {
+      padding-top: 74px;
+      margin-left: -80px;
+
+      .rounded-dialog {
+        width: 418px;
+        height: 260px;
+      }
+    }
+
+    &-image {
+      margin-top: 256px;
+      width: 345px;
+      height: 248px;
+      background-image: url('images/nature/background/blog/web_analysis_tablet.svg');
+    }
+  }
+
+  @media screen and (max-width: $screen-mobile-max) and (min-width: $screen-mobile-min),
+  screen and (max-width: $screen-tiny-max) {
+    &:before {
+      background-image: url('images/nature/background/blog/web_analysis_bg_tablet.svg');
+    }
+
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 796px;
+    justify-content: flex-end;
+
+    &-dialog {
+      padding-top: 24px;
+
+      .rounded-dialog {
+        width: 312px;
+        height: 460px;
+
+        .rounded-dialog-wrapper {
+          padding-left: 28px;
+        }
+      }
+    }
+
+    &-image {
+      margin-top: 60px;
+      width: 285px;
+      height: 208px;
+      background-image: url('images/nature/background/blog/web_analysis_mobile.svg');
+    }
+  }
+}

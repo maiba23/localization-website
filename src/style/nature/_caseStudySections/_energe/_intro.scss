@@ -1,0 +1,128 @@
+.energe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.energe-intro {
+  margin-top: 81px;
+
+  &-title {
+    width: 518px;
+    height: 89px;
+    font-size: 50px;
+    line-height: 50px;
+
+    margin: 0px;
+    font-family: Junegull;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  &-datetime {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 22px;
+
+    width: 392px;
+    height: 22px;
+
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  &-content {
+    position: relative;
+    width: 539px;
+    height: 144px;
+
+    &::before {
+      content: 'We created two energy management platforms.\A \A The first platform Manage My Power is mostly an energy monitoring platform. Autonomy Power also includes management features such \A as advanced solar farm control and alert deployment systems.';
+      position: absolute;
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      color: #000000;
+      white-space: pre-line;
+    }
+  }
+
+  &-image {
+    background-image: url('images/nature/background/energe/energe-intro.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    width: 790px;
+    height: 236px;
+    margin-top: 10px;
+  }
+
+  @media screen and (max-width: $screen-tablet-max) and (min-width: $screen-tablet-min) {
+    &-datetime {
+      margin-bottom: 64px;
+    }
+
+    &-content {
+      height: 130px;
+    }
+
+    &-image {
+      width: 566px;
+      height: 159px;
+      margin-top: 0px;
+    }
+  }
+
+  @media screen and (max-width: $screen-mobile-max) and (min-width: $screen-mobile-min),
+  screen and (max-width: $screen-tiny-max) {
+    margin-top: 44px;
+
+    &-title {
+      width: 268px;
+      height: 96px;
+      font-size: 34px;
+      line-height: 34px;
+
+      font-family: Junegull;
+      font-style: normal;
+      font-weight: normal;
+      text-align: center;
+
+      color: #000000;
+
+    }
+
+    &-datetime {
+      margin-top: 39px;
+      margin-bottom: 208px;
+      width: 266px;
+      height: 37px;
+    }
+
+    &-content {
+      width: 268px;
+      height: 126px;
+
+      &::before {
+        content: 'The first platform Manage \A My Power is mostly an energy monitoring platform.\A\A Autonomy Power also includes advanced management features.';
+      }
+    }
+
+    &-image {
+      background-image: url('images/nature/background/energe/energe-intro-mobile.svg');
+      width: 260px;
+      height: 480px;
+      margin-top: -290px;
+    }
+  }
+
+}

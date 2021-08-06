@@ -1,0 +1,91 @@
+.oil-product {
+  margin-top: 24px;
+
+  &-title {
+    width: 145px;
+    height: 23px;
+    font-size: 25px;
+    line-height: 29px;
+
+    font-family: Cambria;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+    margin: 0;
+
+    margin-bottom: 41px;
+  }
+
+  &-content {
+    width: 540px;
+    height: 220px;
+    text-align: center;
+
+    &::before {
+      content: 'The product is a dashboard where different levels of management can \A see in live the workers navigating the oil rig. Depending  on your clearance level you can see one or multiple rigs, and aggregate data based\A on sites and regions. The rigs change configuration on an hourly \A basis depending on the current operations. \A\A These operations change all the time and do not follow a strict schedule. Depending on the rig’s configuration we had to update the zones that\A are accessible by workers. If a worker is in a currently forbidden zone\A then some custom';
+      font-size: 16px;
+      line-height: 22px;
+
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: normal;
+      color: #000000;
+      white-space: pre-line;
+    }
+  }
+
+  &-image {
+    background-image: url('images/nature/background/oil/oil-product.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    width: 411px;
+    height: 291px;
+    margin-top: 85px;
+  }
+
+  @media screen and (max-width: $screen-tablet-max) and (min-width: $screen-tablet-min) {
+    margin-top: 35px;
+
+    &-content {
+      height: 185px;
+
+      &::before {
+        font-size: 14px;
+        line-height: 19px;
+      }
+    }
+
+    &-image {
+      margin-top: 50px;
+    }
+  }
+
+  @media screen and (max-width: $screen-mobile-max) and (min-width: $screen-mobile-min),
+  screen and (max-width: $screen-tiny-max) {
+    margin-top: 65px;
+
+    &-title {
+      margin-bottom: 30px;
+    }
+
+    &-content {
+      width: 268px;
+      height: 84px;
+      text-align: center;
+
+      &::before {
+        content: 'The product is a dashboard \A where different levels of\A management can see in live the workers navigating the oil rig.';
+      }
+    }
+
+    &-image {
+      margin-top: 31px;
+      width: 225px;
+      height: 159px;
+    }
+  }
+
+}

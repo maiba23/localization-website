@@ -1,0 +1,181 @@
+.oil-challenge {
+  margin-top: 55px;
+  margin-bottom: 105px;
+
+  &-title {
+    margin-bottom: 41px;
+    width: 145px;
+    height: 26px;
+    font-size: 25px;
+    line-height: 29px;
+
+    font-family: Cambria;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+  }
+
+  &-content {
+    width: 540px;
+    height: 125px;
+
+    &::before {
+      content: 'Cyber Security are obviously the number one priority in this project. You can’t just have any device running around an oil rig, or have any  system directly connected to the rig’s network. So we implemented  multiple layers of security. This means we also had to set up different levels of networking.';
+      font-size: 16px;
+      line-height: 22px;
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: normal;
+    }
+
+    text-align: center;
+
+    color: #000000;
+  }
+
+  &-explain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 540px;
+
+    &-wrapper {
+      margin-top: 43px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 1143px;
+    }
+
+    &-reliability {
+      &::before {
+        content: 'Because some oil rigs are in remote areas the bandwidth is not reliable. \A So we also included some offline solutions in case the platform got disconnected. The client actually offered to install some cell towers\A just for the trial! Crazy....';
+      }
+    }
+
+    &-physical {
+      &::before {
+        content: 'The physical challenge was also with the devices, we had to make sure to find devices that allow workers to do their job, that is accurate, but also passes multiple safety requirements.';
+      }
+    }
+
+    &-content {
+      height: 82px;
+      width: 100%;
+      position: relative;
+      text-align: center;
+
+      &::before {
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        position: absolute;
+        white-space: pre-line;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+      }
+
+    }
+
+    &-subtitle {
+      height: 25px;
+      font-size: 25px;
+      line-height: 29px;
+
+      font-family: Cambria;
+      font-style: normal;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    &-image {
+      margin-left: -20px;
+      margin-bottom: 47px;
+    }
+  }
+
+  @media screen and (max-width: $screen-tablet-max) and (min-width: $screen-tablet-min) {
+    margin-top: 50px;
+    margin-bottom: 40px;
+
+    &-content {
+      width: 540px;
+      height: 120px;
+      font-size: 14px;
+      line-height: 19px;
+
+      &::before {
+        font-size: 14px;
+        line-height: 19px;
+      }
+    }
+
+    &-explain {
+      &-wrapper {
+        margin-top: 0px;
+        flex-direction: column;
+        align-items: center;
+        height: 770px;
+
+      }
+
+
+    }
+  }
+
+  @media screen and (max-width: $screen-mobile-max) and (min-width: $screen-mobile-min),
+  screen and (max-width: $screen-tiny-max) {
+    margin-top: 42px;
+    margin-bottom: 40px;
+
+    &-content {
+      width: 268px;
+      height: 125px;
+
+      &::before {
+        content: 'Cyber Security are obviously the number one priority in this project.\A\A So we implemented multiple layers of security. This means we also had to set up different levels of networking.';
+      }
+    }
+
+    &-explain {
+      max-width: 250px;
+
+      &-wrapper {
+        margin-top: 34px;
+        flex-direction: column;
+        align-items: center;
+        height: 710px;
+      }
+
+
+      &-reliability {
+        &::before {
+          content: 'We also included some offline solutions in case the platform got disconnected. ';
+        }
+
+        height: 60px !important;
+      }
+
+      &-image {
+        margin-bottom: 26px;
+      }
+
+      &-subtitle {
+        margin-bottom: 30px;
+      }
+
+      &-content {
+        height: 127px;
+      }
+
+    }
+  }
+
+}

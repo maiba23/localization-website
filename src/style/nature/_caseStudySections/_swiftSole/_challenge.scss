@@ -1,0 +1,82 @@
+.swiftsole-challenge {
+  margin-top: 72px;
+  margin-bottom: 129px;
+
+  &-title {
+    font-family: Cambria;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+
+    width: 159px;
+    height: 24px;
+    margin: 0px;
+    margin-bottom: 41px;
+  }
+
+  &-content {
+    width: 539px;
+    height: 58px;
+
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+
+    white-space: pre-line;
+    color: #000000;
+  }
+
+  &-image {
+    background-image: url('images/nature/background/swiftsole/swiftsole-challenges.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 1002px;
+    height: 609px;
+    margin-top: 43px;
+  }
+
+  @media screen and (max-width: $screen-tablet-max) and (min-width: $screen-tablet-min) {
+    margin-top: 81px;
+    margin-bottom: 40px;
+
+    &-image {
+      width: 640px;
+      height: 389px;
+      margin-top: 14px;
+    }
+
+    &-content {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+
+  @media screen and (max-width: $screen-mobile-max) and (min-width: $screen-mobile-min),
+  screen and (max-width: $screen-tiny-max) {
+    margin-bottom: 39px;
+
+    &-title {
+      margin-bottom: 20px;
+    }
+
+    &-content {
+      font-size: 16px;
+      line-height: 22px;
+      width: 268px;
+      height: 126px;
+    }
+
+    &-image {
+      width: 306px;
+      height: 186px;
+      margin-top: 27px;
+    }
+  }
+}

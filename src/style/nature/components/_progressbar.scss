@@ -1,0 +1,93 @@
+.animate>span .animate>span:after {
+  display: none;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
+.nostripes>span>span,
+.nostripes>span::after {
+  background-image: none;
+}
+
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 340px;
+
+  &-title {
+    font-family: Junegull;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 50px;
+
+    color: #000000;
+  }
+
+  &-content {
+    height: 62.5px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 9px;
+
+    position: relative;
+    margin: 14px 0 20px 0;
+    background: #fff;
+    border-radius: 0px;
+    box-shadow: inset 0 -1px 1px rgb(255 255 255 / 30%);
+    border: 3px solid #000000;
+
+    &>span {
+      background-image: repeating-linear-gradient(to right, #000, #000 23px, #fff 23px, #fff 33px);
+
+      display: block;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+
+      &>span,
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        background-size: 50px 50px;
+        animation: move 2s linear infinite;
+        overflow: hidden;
+      }
+    }
+  }
+
+  @media screen and (max-width: $screen-mobile-max) and (min-width: $screen-mobile-min),
+  screen and (max-width: $screen-tiny-max) {
+    width: 173px;
+
+    &-title {
+      font-size: 30px;
+      line-height: 30px;
+    }
+
+    &-content {
+      height: 32px;
+      padding: 4px;
+
+      &>span {
+        background-image: repeating-linear-gradient(to right, #000, #000 12px, #fff 12px, #fff 17px);
+      }
+
+    }
+  }
+}

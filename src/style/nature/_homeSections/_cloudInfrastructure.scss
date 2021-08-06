@@ -1,0 +1,152 @@
+.cloud-infrastructure {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+
+
+  &:after {
+    content: '';
+    opacity: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+
+  }
+
+  &:before {
+    content: '';
+    opacity: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-position-x: -10px;
+  }
+
+  &-image {
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  @media screen and (min-width: $screen-desktop-min) {
+    height: 1200px;
+    margin-bottom: -257px;
+    margin-top: 105px;
+
+    &:before {
+      background-image: url('images/nature/background/blog/cloud_infrastructure_col.svg');
+    }
+
+    &:after {
+      background-image: url('images/nature/background/blog/cloud_infrastructure_row.svg');
+    }
+
+    &-dialog {
+      margin-top: 194px;
+
+      .rounded-dialog {
+        width: 582px;
+        height: 294px;
+      }
+    }
+
+    &-image {
+      width: 696px;
+      height: 559px;
+      margin-top: 228px;
+      margin-left: -110px;
+      background-image: url('images/nature/background/blog/cloud_infrastructure.svg');
+    }
+
+    &-action-group {
+      align-items: center;
+      display: flex;
+      position: absolute;
+      bottom: 284px;
+      left: 95px;
+    }
+  }
+
+  @media screen and (max-width: $screen-tablet-max) and (min-width: $screen-tablet-min) {
+    height: 696px;
+    margin-bottom: -168px;
+
+    &:before {
+      background-image: url('images/nature/background/blog/cloud_infrastructure_col_tablet.svg');
+    }
+
+    &:after {
+      background-image: url('images/nature/background/blog/cloud_infrastructure_row_tablet.svg');
+    }
+
+    &-dialog {
+      padding-top: 59.26px;
+      margin-right: -100px;
+
+      .rounded-dialog {
+        width: 371px;
+        height: 227px;
+      }
+    }
+
+    &-image {
+      margin-top: 102px;
+      width: 408px;
+      height: 326px;
+      background-image: url('images/nature/background/blog/cloud_infrastructure_tablet.svg');
+    }
+
+    &-action-group {
+      align-items: center;
+      display: flex;
+      position: absolute;
+      bottom: 194px;
+      left: 53px;
+
+      #career {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: $screen-mobile-max) and (min-width: $screen-mobile-min),
+  screen and (max-width: $screen-tiny-max) {
+    height: 807px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin-bottom: -137px;
+
+    &:before {
+      background-image: url('images/nature/background/blog/cloud_infrastructure_col_mobile.svg');
+    }
+
+    &:after {
+      background-image: url('images/nature/background/blog/cloud_infrastructure_row_mobile.svg');
+    }
+
+    &-dialog {
+      padding-top: 58px;
+
+      .rounded-dialog {
+        width: 312px;
+        height: 248px;
+      }
+    }
+
+    &-image {
+      margin-top: 59px;
+      width: 225px;
+      height: 269px;
+      background-image: url('images/nature/background/blog/cloud_infrastructure_mobile.svg');
+    }
+
+  }
+}

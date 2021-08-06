@@ -1,0 +1,61 @@
+.wavely-lines {
+    transition: 1s;
+    &:hover {
+        transform: scaleX(1.2);
+        .cls-1 {
+            transform: rotateY(50deg);
+            transform: rotateX(-20deg);
+            
+        }
+    }
+    .cls-1 {
+        transition: 3s;
+    }
+}
+
+#wavy-lines1 {
+    stroke-dasharray: 100;
+    transition: 3s;
+
+    stroke-dashoffset: 0;
+    &:hover {
+        // animation: dash 4s linear;
+        stroke-dashoffset: 200;
+
+    }
+}
+
+  
+@keyframes data-loop {
+    to {
+      transform: translateX(100px);
+    }
+  }
+
+
+
+  #data-separator {
+      display: flex;
+      border: 3px solid black;
+      h2 {
+          min-width: 150px;
+    text-transform:uppercase;
+    display: flex;
+    justify-content: center;
+    // font-size:4vw;
+    white-space: nowrap;
+    animation: floatText 5s infinite linear;
+    // transform: translateX(-200%);
+    // margin: 0 2rem;
+    padding-left: -100%; /*Initial offset, which places the text off-screen*/
+
+    align-items: center;
+    transform: translateX(-100%);
+      }
+  }
+
+  @keyframes floatText {
+    to {
+      transform: translateX(0%);
+    }
+  }

@@ -1,0 +1,84 @@
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    background: transparent;
+    z-index: 1;
+    background-blend-mode: exclusion;
+    display: flex;
+    justify-content: center;
+    // background: blue;
+    // background: var(--pink);
+    // mix-blend-mode: luminosity;
+    // mix-blend-mode: hard-light;
+    background: white;
+    height: var(--nav-height);
+    justify-content: end;
+    z-index:2;
+
+    ul{
+        // max-width: var(--max-width);
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 500px){
+            padding: 0;
+        }
+        a {
+            // mix-blend-mode: hard-light;
+            font-size: 1.4rem;
+            padding: 0.3rem 1rem;
+            margin: 0 1rem;
+            color: white;
+            cursor: pointer;
+            // background-blend-mode: hard-light;
+            // background: black;
+            color: var(--pink);
+            color: black;
+            position: relative;
+            transition: 0.3s;
+
+            // &::after{
+            //     position: absolute;
+            //     width: 50%;
+            //     height: 50%;
+            //     content:'';
+            //     z-index: -1;
+            //     left: -10px;
+            //     bottom: 25px;
+            //     transition: 0.3s;
+            //     border-top: 2px solid black;
+            //     border-left: 2px solid black;
+            // }
+            &:hover {
+                color: var(--pink);
+                &::after{
+                    left:0;
+                    width: 100%;
+                    height: 100%;
+                    bottom:0px;
+                    background: var(--pink);
+                    // border: 2px solid black;
+                   
+                    
+                }
+                &:nth-child(1) {
+                    &::after{
+                    background: var(--pink);
+                    }
+                }
+                &:nth-child(2) {
+                    &::after{
+                    background: var(--blue);
+                    }
+                }
+                &:nth-child(3) {
+                    &::after{
+                    background: var(--yellow);
+                    }
+                }
+                // color: white;
+            }
+        }
+    }
+}

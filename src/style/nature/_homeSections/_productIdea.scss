@@ -1,0 +1,75 @@
+.product-idea {
+  height: 717px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &-image {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (min-width: $screen-desktop-min) {
+    &-dialog {
+      padding-top: 176px;
+
+      .rounded-dialog {
+        width: 514px;
+        height: 262px;
+      }
+    }
+
+    &-image {
+      margin-top: 73px;
+      margin-left: -25px;
+      width: 562px;
+      height: 502px;
+      background: url('images/nature/background/blog/product_idea.svg');
+    }
+  }
+
+  @media screen and (max-width: $screen-tablet-max) and (min-width: $screen-tablet-min) {
+    height: 431px;
+
+    &-dialog {
+      padding-top: 72.3px;
+      margin-right: 49px;
+
+      .rounded-dialog {
+        width: 394px;
+        height: 201px;
+      }
+    }
+
+    &-image {
+      margin-top: 57px;
+      width: 243px;
+      height: 300px;
+      background: url('images/nature/background/blog/product_idea_tablet.svg');
+    }
+  }
+
+  @media screen and (max-width: $screen-mobile-max) and (min-width: $screen-mobile-min),
+  screen and (max-width: $screen-tiny-max) {
+    flex-direction: column;
+    align-items: center;
+    height: 780px;
+    justify-content: flex-start;
+
+    &-dialog {
+      padding-top: 40px;
+
+      .rounded-dialog {
+        width: 332px;
+        height: 332px;
+      }
+    }
+
+    &-image {
+      margin-top: 37px;
+      width: 243px;
+      height: 300px;
+      background-image: url('images/nature/background/blog/product_idea_tablet.svg');
+    }
+  }
+}

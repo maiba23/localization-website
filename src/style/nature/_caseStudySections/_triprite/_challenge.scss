@@ -1,0 +1,115 @@
+.triprite-challenge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 85px;
+  margin-bottom: 77px;
+
+  &-title {
+    margin: 0px;
+    font-family: Cambria;
+    font-style: normal;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+
+    font-size: 25px;
+    line-height: 29px;
+    margin-bottom: 41px;
+  }
+
+  &-content {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+
+    width: 520px;
+    font-size: 16px;
+    line-height: 22px;
+    white-space: pre-line;
+  }
+
+  &-image {
+    background-image: url('images/nature/background/triprite/challenge.svg');
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+
+    width: 1029px;
+    height: 649px;
+    margin-top: 68px;
+  }
+
+  @media screen and (max-width: $screen-tablet-max) and (min-width: $screen-tablet-min) {
+    margin-top: 85px;
+    margin-bottom: 28px;
+
+    &-subtitle {
+      width: 520px;
+
+      font-size: 14px;
+      line-height: 19px;
+    }
+
+    &-image {
+      background-image: url('images/nature/background/triprite/challenge.svg');
+      width: 658px;
+      height: 415px;
+      margin-top: 50px;
+
+    }
+
+  }
+
+  @media screen and (max-width: $screen-mobile-max) and (min-width: $screen-mobile-min),
+  screen and (max-width: $screen-tiny-max) {
+
+    margin-top: 58px;
+    margin-bottom: 77px;
+
+    &-title {
+      margin-bottom: 20px;
+      position: relative;
+      width: 268px;
+
+      &:after {
+
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        position: absolute;
+        margin-top: 53px;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        content: 'The biggest challenge was that \A we had to work with an extremely poorly designed third party API. \A \A The other challenge was to have a responsive website. It was especially tricky to have all the filter features display on mobile.';
+        width: 268px;
+        white-space: pre-line;
+        font-weight: normal;
+
+      }
+    }
+
+    &-content {
+      width: 268px;
+
+      font-size: 14px;
+      line-height: 19px;
+      display: none;
+    }
+
+    &-image {
+      width: 305px;
+      height: 306px;
+      margin-top: 205px;
+      background-image: url('images/nature/background/triprite/challenge_mobile.svg');
+    }
+
+  }
+}

@@ -1,0 +1,196 @@
+
+// .psuedo {
+//     content: '';
+//     display: block;
+//   }
+  
+//   .group--offset-fill {
+//     position: relative;
+//   }
+  
+//   .shape--triangle {
+//     width: 0;
+//     height: 0;
+//     border: 1rem solid transparent;
+//     border-top: 0rem solid transparent;
+//     border-bottom: 2rem solid #333;
+    
+//     &.shape--offset-fill {
+//       position: absolute;
+//       top: .5rem;
+//       left: .75rem;
+//       border-bottom-color: rgba(255, 0, 0, .3);
+//       z-index: -1;
+//     } 
+//   }
+  
+//   .shape--filled {
+//     background-color: #333;
+//   }
+  
+//   .shape--circle {
+//     width: 2rem;
+//     height: 2rem;
+//     border-radius: 100%;
+//   }
+  
+//   .shape--line {
+//     width: 3rem;
+//     height: .25rem;
+//   }
+  
+//   $zigWidth: 1.5rem;
+  
+//   .zig {
+//       @extend .shape--filled;
+//       @extend .shape--line;
+//       width: $zigWidth;
+//       display: inline-block;
+//       margin-right: -1 * ($zigWidth/1.8);
+//   }
+  
+//   .shape--zig {
+//     @extend .zig;
+//     transform: rotate(45deg);
+//   }
+  
+//   .shape--zag {
+//     @extend .zig;
+//     transform: rotate(-45deg);
+//   }
+  
+//   .shape--plus {
+//     &:before {
+//       @extend .psuedo;
+//       @extend .zig;
+//       transform: rotate(90deg);
+//     }
+//     &:after {
+//       @extend .psuedo;
+//       @extend .zig;
+//       margin-left: -1 * ($zigWidth/2.25);
+//     }
+//   }
+
+// Thanks to https://codepen.io/32kB/pen/rdYoGV
+.shape {
+    margin: 0 auto;
+    position: relative;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.shape-stripe {
+    // margin: 0 auto;
+    position: absolute;
+    height: 100%;
+    overflow-y: hidden;
+    opacity: 0.7;
+    // top:0;
+    // z-index: -1;
+    // border-bottom: 30px solid var(--purple);
+    .space-invader-container{
+        // display: flex;
+        // justify-content: center;
+        width: 100%;
+        /* display: flex; */
+        justify-content: center;
+        text-align: center;
+        .space-invader {
+            // position: absolute;
+            // height: 50px;
+            width: 50px;
+            transform: translateY(-12vh);
+            // transform: translate3d(0,0,0) rotate(#{$rotation + 360}deg);
+        }
+    }
+    width:30vw;
+    &:nth-child(1){
+        left: 10vw;
+    }
+    &:nth-child(2){
+        // left: 50%
+        right: 10vw;
+    }
+    &:nth-child(3){
+        // right:0;
+    }
+    transition: 2s;
+    background: transparent;
+    background: radial-gradient(transparent, transparent);
+    &:hover {
+        background: radial-gradient(violet, transparent);
+        font-size: 17rem;
+    }
+    &:after {
+            width: 0;
+            height: 0;
+            top:20;
+            border-bottom: 400px solid white;
+            border-right: 200px solid transparent;
+            z-index: -1;
+            transform: rotateX(20);
+            width: 0;
+            height: 0;
+            top: 20;
+            border-bottom: 400px solid white;
+            border-right: 20vw solid transparent;
+            z-index: -1;
+            // transform: rotateX(20);
+            // transform: rotateZ(-21deg) rotateY(38deg);
+            transition: 0.5s;
+           
+    }
+}
+.random-shape:after {
+    font-family: inherit;
+  
+}
+
+$circle-size: 30px;
+// $colors: #45ffdc, #ffef96, #ff94a1, #cda1ff, #31b4ff, #4800c0, #9300c9;
+$colors: var(--purple), 
+        var(--pink), 
+        // black,
+        black,
+        // var(--light-pink), 
+        // var(--yellow), 
+        // var(--blue),
+        // var(--grey),
+        var(--black);
+$shapes: '0','I';
+// '\f111', '\f10c', '\f068', '\f22d', '\f077',  '\f04b', '\f067', '\f04d';
+$shape-count: 30;
+
+
+@for $i from 1 through $shape-count {
+    $shape-size: 0.7 + random(10);
+    
+    $rotation: random(360);
+    $speed: 40 + random(30);
+    $color-key: random( length($colors) );
+    $shape-color: nth( $colors, $color-key );
+    $shape-key: random( length($shapes) );
+    $shape-type: nth( $shapes, $shape-key );
+    
+    @keyframes shape-#{$i} {
+        0% {
+            transform: translate3d(0,0,0) rotate(#{$rotation + 0}deg);
+        }
+        100% {
+            transform: translate3d(0,0,0) rotate(#{$rotation + 360}deg);
+        }
+    }
+  
+    .shape-container-#{$i} { 
+        animation: shape-#{$i} #{$speed}s linear infinite;
+
+        .random-shape:after {
+            color: $shape-color;
+            font-size: #{$shape-size * 0.2}rem;
+            content: $shape-type;
+        }
+    }
+
+
+}

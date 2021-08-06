@@ -1,0 +1,17 @@
+.nature {
+    display: block;
+    position: relative;
+    padding: 0;
+    position: relative;
+    padding: 0;
+    width: 100vw;
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: var(--nav-height);
+        min-height: calc(100vh - var(--footer-height) - var(--nav-height));
+    }
+}

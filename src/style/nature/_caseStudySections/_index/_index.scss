@@ -1,0 +1,35 @@
+.case-of-study {
+  width: 681px;
+  height: 446px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-between;
+  align-items: baseline;
+
+  &-item {
+    flex-basis: 33%;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: $screen-tablet-max) and (min-width: $screen-tablet-min) {
+    width: 609px;
+    height: 379px;
+  }
+
+  @media screen and (max-width: $screen-mobile-max) and (min-width: $screen-mobile-min),
+  screen and (max-width: $screen-tiny-max) {
+    width: 333px;
+    height: 516px;
+
+    &-item {
+      flex-basis: 50%;
+
+      &:nth-child(3) {
+        order: 1;
+      }
+    }
+
+  }
+}

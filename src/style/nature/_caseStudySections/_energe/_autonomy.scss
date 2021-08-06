@@ -1,0 +1,77 @@
+.energe-autonomy {
+  margin-top: 15px;
+  margin-bottom: 32px;
+
+  &-title {
+    width: 539px;
+    height: 23px;
+    font-size: 25px;
+    line-height: 29px;
+
+    margin: 0;
+    margin-bottom: 33px;
+    font-family: Cambria;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &-content {
+    width: 390px;
+    height: 84px;
+    font-size: 16px;
+    line-height: 22px;
+
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+
+    color: #000000;
+    white-space: pre-line;
+  }
+
+  &-image {
+    background-image: url('images/nature/background/energe/energe-autonomy.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    width: 587px;
+    height: 430px;
+    margin-top: 0px;
+  }
+
+  @media screen and (max-width: $screen-tablet-max) and (min-width: $screen-tablet-min) {
+    margin-top: 33px;
+    margin-bottom: 91px;
+
+    &-image {
+      width: 429px;
+      height: 314px;
+      margin-top: 17px;
+    }
+  }
+
+  @media screen and (max-width: $screen-mobile-max) and (min-width: $screen-mobile-min),
+  screen and (max-width: $screen-tiny-max) {
+    margin-top: 26px;
+    margin-bottom: 40px;
+
+    &-title {
+      margin-bottom: 40px;
+    }
+
+    &-content {
+      width: 268px;
+      height: 165px;
+    }
+
+    &-image {
+      margin-top: 23px;
+      width: 272px;
+      height: 199px;
+    }
+  }
+
+}

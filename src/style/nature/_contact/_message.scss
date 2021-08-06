@@ -1,0 +1,267 @@
+.message-us {
+  margin-top: 127px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+
+  &:before {
+    content: '';
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-image: url('images/nature/background/blog/input_to_output_bg_desktop.svg');
+  }
+
+  &-title {
+
+    font-family: Junegull;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0px;
+    color: #000000;
+  }
+
+  &-form {
+    background-image: url('images/nature/background/contact/message.svg');
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 970px;
+    height: 858px;
+    margin-bottom: 91px;
+    margin-left: -73px;
+    padding-left: 73px;
+    position: relative;
+
+    .form-inputline {
+      width: 713px;
+    }
+
+    .form-text-input {
+      width: 272px;
+    }
+
+    .form-wrapper {
+      margin-top: 189px;
+      margin-bottom: 110px;
+      height: 560px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .form-checkbox-group {
+      height: 57px;
+
+      &-title {
+        margin-bottom: 23px;
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+      }
+
+      .check-input-label {
+        font-size: 18px;
+        line-height: 25px;
+      }
+    }
+
+    .message-group {
+      height: 185px;
+
+      &-title {
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+
+        color: #000000;
+      }
+
+      &-frm {
+        height: 90px;
+      }
+
+      &-action {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 14px;
+
+        .submit-btn {
+          font-family: Junegull;
+          font-style: normal;
+          font-weight: normal;
+          text-align: center;
+          background: white;
+
+          font-size: 20px;
+          line-height: 20px;
+          border: 3px solid #000;
+          padding: 10px 12px;
+
+          &:hover {
+            background-color: var(--primary-hover-color);
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $screen-tablet-max) and (min-width: $screen-tablet-min) {
+    margin-top: 194px;
+
+    &-form {
+      width: 618px;
+      height: 568px;
+      margin-left: 10px;
+
+      .form-wrapper {
+        margin-top: 110px;
+        margin-right: 35px;
+        height: 400px;
+      }
+
+      .form-inputline {
+        width: 492px;
+      }
+
+      .form-text-input {
+        width: 188px;
+
+        input,
+        span {
+          font-size: 14px !important;
+          line-height: 19px !important;
+        }
+
+        input {
+          padding: 3px 8px !important;
+        }
+      }
+
+
+
+      .check-input-label {
+        font-size: 14px;
+        line-height: 19px;
+      }
+
+      .form-checkbox-group {
+        height: 57px;
+
+        &-title {
+          font-size: 14px;
+          line-height: 19px;
+          margin-bottom: 10px;
+        }
+
+        .check-input-label {
+          font-size: 14px;
+          line-height: 19px;
+        }
+      }
+
+      .message-group {
+        height: 146px;
+
+        &-title {
+          font-size: 14px;
+          line-height: 19px;
+        }
+
+        &-frm {
+          height: 63px;
+        }
+
+        &-action {
+          justify-content: flex-end;
+
+          .nature-button>span {
+            font-size: 20px !important;
+            line-height: 20px !important;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $screen-mobile-max) and (min-width: $screen-mobile-min),
+  screen and (max-width: $screen-tiny-max) {
+    margin-top: 60px;
+
+    &:before {
+      background-image: none;
+
+    }
+
+    &-title {
+      display: none;
+    }
+
+    &-form {
+      background-image: url('images/nature/background/contact/message_mobile.svg');
+      width: 298px;
+      height: 1032px;
+
+      margin: 0;
+      padding: 0;
+
+      .form-wrapper {
+        margin-top: 79px;
+
+      }
+
+      .form-inputline {
+        flex-direction: column;
+        width: auto;
+      }
+
+      .form-text-input {
+        margin-bottom: 25px;
+        max-width: 222px;
+      }
+
+      .form-check-input {
+        margin-bottom: 20px;
+        max-width: 222px;
+      }
+
+      .form-checkbox-group {
+        height: auto;
+      }
+
+      .message-group {
+        height: 146px;
+
+        &-frm {
+          height: 197px;
+        }
+
+        &-action {
+          justify-content: flex-start;
+
+          .nature-button>span {
+            font-size: 20px !important;
+            line-height: 20px !important;
+          }
+        }
+      }
+    }
+  }
+
+}

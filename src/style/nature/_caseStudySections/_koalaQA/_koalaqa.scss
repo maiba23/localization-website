@@ -1,0 +1,70 @@
+.koala-introduce {
+  margin-top: 137px;
+
+  display: flex;
+  flex-direction: column;
+
+  &-title {
+    font-family: Junegull;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    margin: 0px;
+
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  &-subtitle {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    color: #000000;
+
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 24px;
+  }
+
+  &-image {
+    margin-top: -57px;
+  }
+
+  @media screen and (max-width: $screen-tablet-max) and (min-width: $screen-tablet-min) {
+    margin-top: 85px;
+
+    &-image {
+      margin-top: 24px;
+
+      svg {
+        width: 608px;
+        height: 400px;
+      }
+    }
+  }
+
+  @media screen and (max-width: $screen-mobile-max) and (min-width: $screen-mobile-min),
+  screen and (max-width: $screen-tiny-max) {
+    margin-top: 38px;
+
+    &-title {
+      font-size: 38px;
+      line-height: 38px;
+    }
+
+    &-subtitle {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    &-image {
+      margin-top: 25px;
+
+      svg {
+        width: 275px;
+        height: 199px;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.footer-nav {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 1440px) {
+    padding-left: 50px;
+  }
+}

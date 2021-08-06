@@ -1,0 +1,142 @@
+footer {
+  height: var(--footer-height);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+
+  .social-icons {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    svg {
+      &:hover {
+        path {
+          stroke: var(--primary-hover-color);
+        }
+      }
+    }
+  }
+
+  .logo-container {
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    &-title {
+      color: #ffffff;
+
+      font-family: Junegull;
+      font-style: normal;
+      font-weight: normal;
+    }
+
+    &-content {
+      color: #ffffff;
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: normal;
+    }
+  }
+
+  @media screen and (min-width: $screen-desktop-min) {
+    background-image: url('images/nature/background/footer.png');
+
+    .social-icons {
+      bottom: 70px;
+      left: 9.4%;
+      width: 160px;
+
+      svg {
+        height: 44px !important;
+      }
+    }
+
+    .logo-container {
+      bottom: 68px;
+      right: 5.2%;
+      width: 150px;
+
+
+      &-title {
+        width: 112px;
+        font-size: 64px;
+        line-height: 64px;
+      }
+
+      &-content {
+        font-size: 11px;
+        line-height: 15px;
+      }
+    }
+  }
+
+  @media screen and (max-width: $screen-tablet-max) and (min-width: $screen-tablet-min) {
+    background-image: url('images/nature/background/footer_tablet.svg');
+
+    .social-icons {
+      bottom: 47px;
+      left: 7%;
+      width: 160px;
+
+      svg {
+        height: 34px !important;
+      }
+    }
+
+    .logo-container {
+      bottom: 46px;
+      right: 5.2%;
+      width: 150px;
+
+      &-title {
+        width: 112px;
+        font-size: 50px;
+        line-height: 50px;
+      }
+
+      &-content {
+        font-size: 9px;
+        line-height: 12px;
+      }
+    }
+  }
+
+  @media screen and (max-width: $screen-mobile-max) and (min-width: $screen-mobile-min),
+  screen and (max-width: $screen-tiny-max) {
+
+    background-image: url('images/nature/background/footer_mobile.svg');
+
+    .social-icons {
+      bottom: 39px;
+      left: 7.22%;
+      width: 128px;
+
+      svg {
+        height: 30px !important;
+      }
+    }
+
+    .logo-container {
+      bottom: 38px;
+      right: 7%;
+      width: 66px;
+
+      &-title {
+        width: 112px;
+        font-size: 40px;
+        line-height: 40px;
+      }
+
+      &-content {
+        font-size: 11px;
+        line-height: 15px;
+        display: none;
+      }
+    }
+  }
+}

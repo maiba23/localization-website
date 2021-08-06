@@ -1,0 +1,137 @@
+.swiftsole {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swiftsole-intro {
+  margin-top: 137px;
+
+  &-title {
+    height: 42px;
+    margin-bottom: 24px;
+
+    font-family: Junegull;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+
+    color: #000000;
+  }
+
+  &-subtitle {
+
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    color: #000000;
+
+    width: 392px;
+    height: 22px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &-image1 {
+    background-image: url('images/nature/background/swiftsole/swiftsole-intro1.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 754px;
+    height: 366px;
+    margin-top: -9px;
+  }
+
+  &-content {
+    width: 540px;
+    height: 173px;
+    position: relative;
+    text-align: center;
+
+    &::before {
+      content: 'This is a smaller project but how cool was it!\A We loved working with Swiftsole. They are energetic, \A talented, technical and they know what they want. \A\A        This is one of the rare cases where this was not a complete greenfield. There was already a design and another very similar product.\A After the launch of their really successful IOS app Switfsole\A wanted a desktop app for Windows and Mac.';
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      white-space: pre-line;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+
+      color: #000000;
+    }
+
+
+    margin-top: 45px;
+  }
+
+  &-image2 {
+    background-image: url('images/nature/background/swiftsole/swiftsole-intro2.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 439px;
+    height: 234px;
+    margin-top: 54px;
+  }
+
+  @media screen and (max-width: $screen-tablet-max) and (min-width: $screen-tablet-min) {
+    &-image1 {
+      width: 652px;
+      height: 316px;
+      margin-top: 16px;
+    }
+
+    &-content {
+      margin-top: 53px;
+    }
+  }
+
+  @media screen and (max-width: $screen-mobile-max) and (min-width: $screen-mobile-min),
+  screen and (max-width: $screen-tiny-max) {
+    margin-top: 38px;
+
+    &-title {
+      font-size: 38px;
+      line-height: 38px;
+      margin-bottom: 40px;
+    }
+
+    &-subtitle {
+      width: 268px;
+      height: 39px;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    &-image1 {
+      width: 312px;
+      height: 152px;
+      margin-top: 10px;
+    }
+
+    &-content {
+      width: 268px;
+      height: 125px;
+
+      &:before {
+        content: 'We loved working with Swiftsole. \A\A After the launch of their really successful IOS app Switfsole \A wanted a desktop app \A for Windows and Mac.';
+      }
+    }
+
+    &-image2 {
+      width: 267px;
+      height: 147px;
+      margin-top: 55px;
+    }
+
+  }
+
+
+}
