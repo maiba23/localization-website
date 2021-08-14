@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: "ITIO - your Web Agency",
+    title: "Wagency - your Web Agency",
     supportedLanguages: ["en", "es"],
     siteUrl:
       process.env.GATSBY_ACTIVE_ENV === "development"
         ? "http://localhost:8000"
-        : "https://itio.dev",
+        : "https://Wagency.netlify.app",
   },
   plugins: [
     `gatsby-plugin-styled-jsx`,
@@ -95,7 +95,7 @@ module.exports = {
         defaultLanguage: `en`,
         siteUrl:
           process.env.GATSBY_ACTIVE_ENV === "production"
-            ? `https://itio.dev`
+            ? `https://Wagency.netlify.app`
             : `http://localhost:8000`,
         i18nextOptions: {
           interpolation: {
