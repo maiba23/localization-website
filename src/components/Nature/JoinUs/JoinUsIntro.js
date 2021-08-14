@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 
 const JoinUsIntro = () => {
   return (
-    <div className='joinus-intro'>
-      <h1 className='joinus-intro-title'>
+    <div className="joinus-intro">
+      <h1 className="joinus-intro-title">
         <span>
-          Join us at <strong>ITIO</strong>
+          Join us at <strong>Wagency</strong>
         </span>
       </h1>
-      <div className='joinus-intro-image'></div>
+      <div className="joinus-intro-image"></div>
     </div>
   );
 };

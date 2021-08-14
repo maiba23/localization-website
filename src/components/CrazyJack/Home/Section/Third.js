@@ -11,8 +11,8 @@ const ThirdSection = () => (
           </h2>
           <div className="container-highlight-text small multiple-bg">
             <p>
-              At ITIO we create tools to make it easier for businesses to tracks
-              their metrics and automate themselves.
+              At Wagency we create tools to make it easier for businesses to
+              tracks their metrics and automate themselves.
               <br />
               <br />
               Regardless of the industry nay business can improve the creation,

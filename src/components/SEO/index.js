@@ -21,6 +21,6 @@ SEO.propTypes = {
 };
 
 SEO.defaultProps = {
-  title: "ITIO, your web agency",
+  title: "Wagency, your web agency",
   lang: "en",
 };

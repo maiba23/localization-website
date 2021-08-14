@@ -11,7 +11,7 @@ const SecondSection = () => (
             <div className="container-highlight-text bold">
               <p>
                 {" "}
-                From a simple idea to a complete website, ITIO supports your
+                From a simple idea to a complete website, Wagency supports your
                 journey.
               </p>
               <p>

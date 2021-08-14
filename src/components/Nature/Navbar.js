@@ -61,7 +61,7 @@ const NatureNavBar = () => {
         className="nav-link nav-link-enable"
       >
         <div className="logo-container">
-          <span className="logo">ITIO</span>
+          <span className="logo">WA</span>
         </div>
       </AniLink>
       <ul className="navbar">
